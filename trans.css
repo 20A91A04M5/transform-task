@@ -1,0 +1,120 @@
+body{
+    margin: 100px;
+
+}
+h2{
+    text-align: center;
+    border: 2px solid gold;
+    background-color: rgb(170, 242, 242);
+}
+.cont{
+    display: grid;
+    /* width: 100%; */
+    grid-template-areas:
+    'im2 im1 im1'
+    'im2 im3 im4'
+    'im2 im3 im4';
+}
+.im1{
+    grid-area: im1;
+}
+.im2{
+    grid-area: im2;
+}
+.im3{
+    grid-area: im3;
+}
+.im4{
+    grid-area: im4;
+}
+.i1{
+    height: 25vw;
+    border: 2px solid blue;
+}
+.i2{
+    height: 58vw;
+    border: 2px solid red;
+}
+.i3{
+    height: 29vw;
+    border: 2px solid green;
+}
+.i4{
+    height: 29vw;
+    border: 2px solid yellow;
+}
+.i2:hover{
+    transform: translate(100px,300px);
+    border-radius: 30%;
+
+}
+.i1:hover{
+    transform:rotate(90deg);
+}
+.i3:hover{
+    transform: scale(2.5);
+    width:200px;
+    height: 200px;
+}
+.i4:hover{
+    transform: skew(40deg,30deg);
+}
+
+.cont2{
+    display: grid;
+    /* width: 100%; */
+    grid-template-areas:
+    'im5 im5 im6'
+    'im7 im8 im6'
+    'im7 im8 im6';
+}
+.im5{
+    grid-area: im5;
+}
+.im6{
+    grid-area: im6;
+}
+.im7{
+    grid-area: im7;
+}
+.im8{
+    grid-area: im8;
+}
+.i5{
+    border: 2px solid green;
+}
+.i6{
+    height: 85vw;
+    border: 2px solid gold;
+}
+.i8{
+    height: 40vw;
+    border: 2px solid blue;
+}
+.i7{
+    height: 40VW;
+    border: 2px solid red;
+}
+.i8:hover{
+    transform: perspective(500px) rotate(45deg);
+    height: 300px;
+    width: 200px;
+}
+.i5:hover{
+    transform: rotate3d(1,1,1,90deg);
+    /* height: 300px; */
+}
+.i7:hover{
+    transform: translate3d(150px,0,0);
+}
+.i6:hover{
+    transform: scale3d(1.5,1.5,1.5);
+    height: 400px;
+}
+
+@media screen and (width<992){
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+}
